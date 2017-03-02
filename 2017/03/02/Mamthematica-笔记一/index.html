@@ -5,19 +5,22 @@
   
   <title>Mathematica 笔记一 | 子诚的读书笔记</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Mathematica应该看作编程语言，而不是一个计算软件。Google创始人曾经建议将Mathematica的解释器免费发布，公司盈利则利用 Package 的 License。可惜这个想法没有被采纳，不然也许Mathematica更应用更广泛，我们现在也不至于用盗版的了。Mathematica核心语言从1.0到11.0都变化不大，所以学习起来不用考虑版本，教材多就都行。以下一些散乱笔记：
-Ev">
+  <meta name="description" content="Mathematica应该看作编程语言，而不是一个计算软件。Google创始人曾经建议将Mathematica的解释器免费发布，公司盈利则利用 Package 的 License。可惜这个想法没有被采纳，不然也许Mathematica更应用更广泛，我们现在也不至于用盗版的了。目前所知，学习Mathematica一般有三个过程：
+
+Procedural programming过程式编程，使用 For">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mathematica 笔记一">
 <meta property="og:url" content="http://yoursite.com/2017/03/02/Mamthematica-笔记一/index.html">
 <meta property="og:site_name" content="子诚的读书笔记">
-<meta property="og:description" content="Mathematica应该看作编程语言，而不是一个计算软件。Google创始人曾经建议将Mathematica的解释器免费发布，公司盈利则利用 Package 的 License。可惜这个想法没有被采纳，不然也许Mathematica更应用更广泛，我们现在也不至于用盗版的了。Mathematica核心语言从1.0到11.0都变化不大，所以学习起来不用考虑版本，教材多就都行。以下一些散乱笔记：
-Ev">
-<meta property="og:updated_time" content="2017-03-02T16:28:03.795Z">
+<meta property="og:description" content="Mathematica应该看作编程语言，而不是一个计算软件。Google创始人曾经建议将Mathematica的解释器免费发布，公司盈利则利用 Package 的 License。可惜这个想法没有被采纳，不然也许Mathematica更应用更广泛，我们现在也不至于用盗版的了。目前所知，学习Mathematica一般有三个过程：
+
+Procedural programming过程式编程，使用 For">
+<meta property="og:updated_time" content="2017-03-02T16:58:45.799Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mathematica 笔记一">
-<meta name="twitter:description" content="Mathematica应该看作编程语言，而不是一个计算软件。Google创始人曾经建议将Mathematica的解释器免费发布，公司盈利则利用 Package 的 License。可惜这个想法没有被采纳，不然也许Mathematica更应用更广泛，我们现在也不至于用盗版的了。Mathematica核心语言从1.0到11.0都变化不大，所以学习起来不用考虑版本，教材多就都行。以下一些散乱笔记：
-Ev">
+<meta name="twitter:description" content="Mathematica应该看作编程语言，而不是一个计算软件。Google创始人曾经建议将Mathematica的解释器免费发布，公司盈利则利用 Package 的 License。可惜这个想法没有被采纳，不然也许Mathematica更应用更广泛，我们现在也不至于用盗版的了。目前所知，学习Mathematica一般有三个过程：
+
+Procedural programming过程式编程，使用 For">
   
     <link rel="alternate" href="/atom.xml" title="子诚的读书笔记" type="application/atom+xml">
   
@@ -92,14 +95,21 @@ Ev">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Mathematica应该看作编程语言，而不是一个计算软件。Google创始人曾经建议将Mathematica的解释器免费发布，公司盈利则利用 Package 的 License。可惜这个想法没有被采纳，不然也许Mathematica更应用更广泛，我们现在也不至于用盗版的了。Mathematica核心语言从1.0到11.0都变化不大，所以学习起来不用考虑版本，教材多就都行。以下一些散乱笔记：</p>
+        <p>Mathematica应该看作编程语言，而不是一个计算软件。Google创始人曾经建议将Mathematica的解释器免费发布，公司盈利则利用 Package 的 License。可惜这个想法没有被采纳，不然也许Mathematica更应用更广泛，我们现在也不至于用盗版的了。目前所知，学习Mathematica一般有三个过程：</p>
+<ul>
+<li><p>Procedural programming<br>过程式编程，使用 For, While, Do, With等语句，代码具有明显的 C 风格。虽然容易阅读，但效率低，不推荐使用在Mathematica中使用。</p>
+</li>
+<li><p>Functional programming<br>函数式编程，目前所知有 Map, Apply, Thread 等函数，效率明显提高。使用一些缩写，就具有Mathematica风格了。<br>-Rule-based programming<br>Mathematica的精华，感觉太酷了。如随机矩阵的冒泡排序，只要一个语句就够了，RandomReal[1, 10] //. {a<strong><em>, b</em>, c<em>, d</em></strong>} /; b &gt; c -&gt; {a, c, b, d}。</p>
+</li>
+</ul>
+<p>Mathematica核心语言从1.0到11.0都变化不大，所以学习起来不用考虑版本，教材多就都行。以下开始学习：</p>
 <h2 id="Everything-is-an-expression"><a href="#Everything-is-an-expression" class="headerlink" title="Everything is an expression"></a>Everything is an expression</h2><p>There are two types of expression: atoms and normal expression. Normal expression can be constructed using three blocks: atoms, square brackets and commas. AtomQ[expr] returns True if expr is a atoms. There are three classed of atoms: symbols, numbers and character strings.</p>
 <h2 id="Every-expression-has-a-head"><a href="#Every-expression-has-a-head" class="headerlink" title="Every expression has a head"></a>Every expression has a head</h2><p>Function Head[expr] or expr[[0]] gives the head of expr.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/02/Mamthematica-笔记一/" data-id="cizslulv90000gzhhpci6wegc" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/03/02/Mamthematica-笔记一/" data-id="cizsmyi9t0000vrhh64fe47mn" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mma-核心语言/">mma 核心语言</a></li></ul>
