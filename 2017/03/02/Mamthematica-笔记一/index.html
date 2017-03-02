@@ -3,14 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>子诚的读书笔记</title>
+  <title>Mamthematica 笔记一 | 子诚的读书笔记</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="子诚的读书笔记">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="Mamthematica应该看作编程语言，而不是一个计算软件。Google创始人曾经建议将Mamthematica的解释器免费发布，公司盈利则利用 Package 的 License。可惜这个想法没有被采纳，不然也许Mamthematica更应用更广泛，我们现在也不至于用盗版的了。Mamthematica核心语言从1.0到11.0都变化不大，所以学习起来不用考虑版本，教材多就都行。以下一些散乱笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mamthematica 笔记一">
+<meta property="og:url" content="http://yoursite.com/2017/03/02/Mamthematica-笔记一/index.html">
 <meta property="og:site_name" content="子诚的读书笔记">
+<meta property="og:description" content="Mamthematica应该看作编程语言，而不是一个计算软件。Google创始人曾经建议将Mamthematica的解释器免费发布，公司盈利则利用 Package 的 License。可惜这个想法没有被采纳，不然也许Mamthematica更应用更广泛，我们现在也不至于用盗版的了。Mamthematica核心语言从1.0到11.0都变化不大，所以学习起来不用考虑版本，教材多就都行。以下一些散乱笔记">
+<meta property="og:updated_time" content="2017-03-02T16:23:25.171Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="子诚的读书笔记">
+<meta name="twitter:title" content="Mamthematica 笔记一">
+<meta name="twitter:description" content="Mamthematica应该看作编程语言，而不是一个计算软件。Google创始人曾经建议将Mamthematica的解释器免费发布，公司盈利则利用 Package 的 License。可惜这个想法没有被采纳，不然也许Mamthematica更应用更广泛，我们现在也不至于用盗版的了。Mamthematica核心语言从1.0到11.0都变化不大，所以学习起来不用考虑版本，教材多就都行。以下一些散乱笔记">
   
     <link rel="alternate" href="/atom.xml" title="子诚的读书笔记" type="application/atom+xml">
   
@@ -63,9 +67,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Mamthematica-笔记一" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Mamthematica-笔记一" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/03/02/Mamthematica-笔记一/" class="article-date">
   <time datetime="2017-03-02T15:47:32.000Z" itemprop="datePublished">2017-03-02</time>
@@ -78,8 +80,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/02/Mamthematica-笔记一/">Mamthematica 笔记一</a>
+    <h1 class="article-title" itemprop="name">
+      Mamthematica 笔记一
     </h1>
   
 
@@ -102,71 +104,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-第一篇" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/02/第一篇/" class="article-date">
-  <time datetime="2017-03-02T15:39:18.000Z" itemprop="datePublished">2017-03-02</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/02/第一篇/">HEXO+Github 搭建个人博客步骤</a>
-    </h1>
+    <a href="/2017/03/02/第一篇/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">HEXO+Github 搭建个人博客步骤</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>EXO+Github 教程网上非常多，现将适合自己的步骤记录一下。</p>
-<h2 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h2><ul>
-<li>官网下载 source code，Binaries 试过不行。</li>
-<li>Ubuntu下，需要root权限安装。  sudo ./configure; sudo make -j4; sudo make install </li>
-<li>测试 node -v，显示版本则安装成功。</li>
-<li>重启机子，必要。</li>
-</ul>
-<h2 id="安装-HEXO"><a href="#安装-HEXO" class="headerlink" title="安装 HEXO"></a>安装 HEXO</h2><ul>
-<li>sudo npm install -g hexo-cli</li>
-<li>初始化  mkdir BLOG; cd BLOG; hexo init . BLOG 为根目录。</li>
-<li>生成静态页面  hexo generate; 启动本地服务 bash hexo server</li>
-<li>浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>, 可以查看博客了。但只能在本地用，下面推送到 Github.</li>
-</ul>
-<h2 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h2><ul>
-<li>建立Repository, 仓库名必须和用户名一样，格式：<strong>your_user_name.github.io</strong>。这块卡了好久。</li>
-<li>编辑_config.yml文件，来建立关联。注意冒号后面的空格，否则会报缩进不对的错误。</li>
-</ul>
-<p>deploy:<br>  type: git<br>  repository: <a href="https://github.com/liuzhicheng00/liuzhicheng00.github.io.git" target="_blank" rel="external">https://github.com/liuzhicheng00/liuzhicheng00.github.io.git</a><br>  branch: master</p>
-<ul>
-<li>推送到远程仓库，然后在浏览器中输入<a href="https://liuzhicheng00.github.io/浏览。" target="_blank" rel="external">https://liuzhicheng00.github.io/浏览。</a></li>
-</ul>
-<p>npm install hexo-deployer-git –save<br>hexo generate<br>hexo deploy</p>
-<h2 id="Markdown-语法"><a href="#Markdown-语法" class="headerlink" title="Markdown 语法"></a>Markdown 语法</h2><p>慢慢了解即可，可在线编辑，直接看效果，<a href="https://www.zybuluo.com/mdeditor#673406。" target="_blank" rel="external">https://www.zybuluo.com/mdeditor#673406。</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/02/第一篇/" data-id="cizslihqm0001kyhhf4xz72ch" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教程/">教程</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
 
 </section>
         
