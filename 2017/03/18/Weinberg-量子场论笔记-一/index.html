@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Weinberg 量子场论," />
 
 
 
@@ -87,12 +87,31 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="子诚的读书笔记">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="趁着上课，把Weinberg 场论刷一遍，以后寡人也是看过 Weinberg 的人了，，，第一章介绍历史跳过。
+Relativistic Quantum Mechanics
+Quantum  field theory is the only way to reconcile quantum mechanics with special relativity.
+
+Symmetries
+A symme">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Weinberg 量子场论笔记 一">
+<meta property="og:url" content="http://yoursite.com/2017/03/18/Weinberg-量子场论笔记-一/index.html">
 <meta property="og:site_name" content="子诚的读书笔记">
+<meta property="og:description" content="趁着上课，把Weinberg 场论刷一遍，以后寡人也是看过 Weinberg 的人了，，，第一章介绍历史跳过。
+Relativistic Quantum Mechanics
+Quantum  field theory is the only way to reconcile quantum mechanics with special relativity.
+
+Symmetries
+A symme">
+<meta property="og:updated_time" content="2017-04-03T15:59:39.582Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="子诚的读书笔记">
+<meta name="twitter:title" content="Weinberg 量子场论笔记 一">
+<meta name="twitter:description" content="趁着上课，把Weinberg 场论刷一遍，以后寡人也是看过 Weinberg 的人了，，，第一章介绍历史跳过。
+Relativistic Quantum Mechanics
+Quantum  field theory is the only way to reconcile quantum mechanics with special relativity.
+
+Symmetries
+A symme">
 
 
 
@@ -120,13 +139,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/18/Weinberg-量子场论笔记-一/"/>
 
 
 
 
 
-  <title> 子诚的读书笔记 </title>
+  <title> Weinberg 量子场论笔记 一 | 子诚的读书笔记 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -151,9 +170,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -236,153 +253,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/03/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zhi">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="子诚的读书笔记">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/04/03/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-03T22:54:08+08:00">
-                2017-04-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="搭建步骤：安装-Node-js-和-hexo，"><a href="#搭建步骤：安装-Node-js-和-hexo，" class="headerlink" title="搭建步骤：安装 Node.js 和 hexo，"></a>搭建步骤：安装 Node.js 和 hexo，</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ hexo init  <span class="comment">#在根目录下初始化，</span></div><div class="line">$ hexo new <span class="string">"My New Post"</span> <span class="comment"># 新建一篇文章，</span></div><div class="line">$ hexo generate <span class="comment"># 生成网站静态文件到 public 目录，</span></div><div class="line">$ hexo server <span class="comment"># 启动本地服务，  http://localhost:4000 打开查看，</span></div><div class="line">$ hexo deploy <span class="comment"># 推送到远程，</span></div><div class="line">$ npm install hexo-deployer-git --save <span class="comment"># 推送出现问题运行</span></div><div class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</div></pre></td></tr></table></figure>
-<p>最后一步下载 next 主题 到 themes 目录，更改_config.yml 文件 theme: next .</p>
-<h1 id="更新详细步骤"><a href="#更新详细步骤" class="headerlink" title="更新详细步骤"></a>更新详细步骤</h1><h2 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h2><ul>
-<li>官网下载 source code，Binaries 试过不行。</li>
-<li>Ubuntu下，需要root权限安装。  sudo ./configure; sudo make -j4; sudo make install </li>
-<li>测试 node -v，显示版本则安装成功。</li>
-<li>重启机子，必要。</li>
-</ul>
-<h2 id="安装-HEXO"><a href="#安装-HEXO" class="headerlink" title="安装 HEXO"></a>安装 HEXO</h2><ul>
-<li>sudo npm install -g hexo-cli</li>
-<li>初始化  mkdir BLOG; cd BLOG; hexo init . BLOG 为根目录。</li>
-<li>生成静态页面  hexo generate; 启动本地服务 bash hexo server</li>
-<li>浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>, 可以查看博客了。但只能在本地用，下面推送到 Github.</li>
-</ul>
-<h2 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h2><ul>
-<li>建立Repository, 仓库名必须和用户名一样，格式：<strong>your_user_name.github.io</strong>。这块卡了好久。</li>
-<li>编辑_config.yml文件，来建立关联。注意冒号后面的空格，否则会报缩进不对的错误。</li>
-</ul>
-<p>deploy:<br>  type: git<br>  repository: <a href="https://github.com/liuzhicheng00/liuzhicheng00.github.io.git" target="_blank" rel="external">https://github.com/liuzhicheng00/liuzhicheng00.github.io.git</a><br>  branch: master</p>
-<ul>
-<li>推送到远程仓库，然后在浏览器中输入<a href="https://liuzhicheng00.github.io/浏览。" target="_blank" rel="external">https://liuzhicheng00.github.io/浏览。</a></li>
-</ul>
-<p>npm install hexo-deployer-git –save<br>hexo generate<br>hexo deploy</p>
-<h3 id="Markdown-语法"><a href="#Markdown-语法" class="headerlink" title="Markdown 语法"></a>Markdown 语法</h3><p>适合做笔记，目前用的moeditor 界面好简洁。也可在线编辑，直接看效果，<a href="https://www.zybuluo.com/mdeditor#673406。" target="_blank" rel="external">https://www.zybuluo.com/mdeditor#673406。</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
 
   
 
@@ -412,10 +285,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/03/18/Weinberg-量子场论笔记-一/" itemprop="url">
-                  Weinberg 量子场论笔记 一
-                </a>
+                Weinberg 量子场论笔记 一
               
             
           </h1>
@@ -466,9 +336,7 @@
       
 
       
-        
-          
-            <p>趁着上课，把Weinberg 场论刷一遍，以后寡人也是看过 Weinberg 的人了，，，第一章介绍历史跳过。</p>
+        <p>趁着上课，把Weinberg 场论刷一遍，以后寡人也是看过 Weinberg 的人了，，，第一章介绍历史跳过。</p>
 <h2 id="Relativistic-Quantum-Mechanics"><a href="#Relativistic-Quantum-Mechanics" class="headerlink" title="Relativistic Quantum Mechanics"></a>Relativistic Quantum Mechanics</h2><blockquote>
 <p><strong>Quantum  field theory is the only way to reconcile quantum mechanics with special relativity.</strong></p>
 </blockquote>
@@ -481,173 +349,76 @@
 <h3 id="Quantum-Lorentz-Transformations"><a href="#Quantum-Lorentz-Transformations" class="headerlink" title="Quantum Lorentz Transformations"></a>Quantum Lorentz Transformations</h3><p>间隔不变性：$d s^2 = \eta_{ \mu \nu } dx^{ \mu } dx^{ \nu }$</p>
 <p>当$ d s^2 = 0 $ 时，可看出光速不变。要保持$ d s^2 $ 不变， $ x^{\mu} $ 变换只能是线性的：$ x’^{\mu} = \Lambda^{ \mu }{_{ \nu }} x^{\nu} + a^{\mu} .$</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/18/mma1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zhi">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="子诚的读书笔记">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/03/18/mma1/" itemprop="url">
-                  Mathematica 笔记一
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-18T18:47:43+08:00">
-                2017-03-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/Weinberg-量子场论/" rel="tag"># Weinberg 量子场论</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
         
-          
-            <p>Mathematica 是软件， wolfram是编程语言。核心语言从1.0到11.0都变化不大，所以学习起来不用考虑版本，教材多久都行。目前所知，学习Mathematica一般有三个过程：</p>
-<ul>
-<li><p><strong>Procedural programming：</strong><br>过程式编程，使用 For, While, Do, With等语句，代码具有明显的 C 风格。虽然容易阅读，但效率低，不推荐在Mathematica中使用。</p>
-</li>
-<li><p><strong>Functional programming：</strong><br>函数式编程，目前所知有 Map, Apply, Thread 等函数，效率明显提高。再使用一些语法糖，就具有Mathematica风格了。</p>
-</li>
-<li><p><strong>Rule-based programming：</strong><br>感觉太酷了。如随机数组的冒泡排序，只要一个语句就够了。</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">RandomReal[1, 10] //. &#123;a___, b_, c_, d___&#125; /; b &gt; c -&gt; &#123;a, c, b, d&#125;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>To be continued…</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/18/mma1/" rel="next" title="Mathematica 笔记一">
+                <i class="fa fa-chevron-left"></i> Mathematica 笔记一
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/04/03/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -655,6 +426,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -674,8 +449,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -728,6 +512,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Relativistic-Quantum-Mechanics"><span class="nav-number">1.</span> <span class="nav-text">Relativistic Quantum Mechanics</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Symmetries"><span class="nav-number">1.1.</span> <span class="nav-text">Symmetries</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Quantum-Lorentz-Transformations"><span class="nav-number">1.2.</span> <span class="nav-text">Quantum Lorentz Transformations</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -835,6 +635,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
